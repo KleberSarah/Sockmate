@@ -63,6 +63,10 @@ nav ul {
     transition: background-color 0.3s ease;
 }
 
+.btn:hover {
+    opacity: 0.75;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -149,6 +153,56 @@ nav ul {
     border-radius: 10px;
     margin-top: 1rem;
 }
+
+.product-button:hover {
+    opacity: 0.75;
+}
+
+.product-button:focus-visible {
+
+    outline: 5px solid red;
+    outline-offset: 5px;
+}
+
+
+.charity {
+    padding: 6rem 0;
+    background-color: var(--color-surface);
+    text-align: center;
+}
+
+.charity h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.charity-text {
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    color: var(--color-secondary);
+    font-size: 1.1rem;
+}
+
+.charity-button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--color-accent);
+    color: #ffffff;
+    padding: 1rem 2rem;
+    border-radius: 999px;
+}
+
+.charity-button:hover {
+    opacity: 0.75;
+}
+
+.charity-button:focus-visible {
+
+    outline: 3px solid #ff6b35;
+    outline-offset: 3px;
+}
+
+
 
 
 @media (max-width:768px){
