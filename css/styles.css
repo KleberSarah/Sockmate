@@ -101,16 +101,18 @@ nav ul {
     margin-bottom: 1rem;
 }
 
-.btn {
+.hero-btn {
+    display: inline-block;
     background-color: var(--color-accent);
     color: #ffffff;
     padding: 1rem 2rem;
     text-decoration: none;
+    margin-top: 2rem;
     border-radius: 999px;
     transition: background-color 0.3s ease;
 }
 
-.btn:hover {
+.hero-btn:hover {
     opacity: 0.75;
 }
 
