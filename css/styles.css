@@ -150,10 +150,6 @@ nav ul {
     margin-top: 1rem;
 }
 
-.product-button:focus-visible {
-    outline: 3px solid #ff6b35;
-    outline-offset: 3px;
-}
 
 @media (max-width:768px){
 
