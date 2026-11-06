@@ -62,3 +62,81 @@ nav ul {
     border-radius: 999px;
     transition: background-color 0.3s ease;
 }
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.vorteile-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.vorteile {
+    padding: 6rem 0;
+    background-color: var(--color-surface);
+}
+
+.vorteile h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+}
+
+.vorteil-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.vorteil-card:hover {
+    transform: translateY(-4px);
+}
+
+.products {
+    padding: 6rem 0;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.product-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 16px;
+    border: 1px solid var(--color-border);
+    transition: transform 0.3s ease;
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+}
+
+.product-card:hover {
+    transform: translateY(-4px);
+}
+
+@media (max-width:768px){
+
+    .vorteile-grid{
+
+        grid-template-columns:1fr;
+    }
+
+     .produkte-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+}
