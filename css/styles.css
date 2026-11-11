@@ -388,8 +388,10 @@ footer {
         flex: 1 1 100%;
         width: 100%;
     }
-.product-button:focus-visible{
-    outline: 5px solid red;
-    outline-offset: 5px;
+    
+.product-button:focus-visible {
+    outline: 3px solid var(--color-accent);
+    outline-offset: 3px;
 }
+
 }
