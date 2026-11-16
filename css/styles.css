@@ -316,8 +316,6 @@ footer {
     line-height: 1.6;
 }
 
-/* Eingabefelder */
-
 .contact-section input[type=text],
 .contact-section select,
 .contact-section textarea {
@@ -333,7 +331,6 @@ footer {
     font-family: inherit;
 }
 
-/* Absenden-Button */
 
 .contact-section input[type=submit] {
     background-color: var(--color-accent);
@@ -356,11 +353,10 @@ footer {
 }
 
 .contact-section input[type=submit]:focus-visible {
-    outline: 5px solid rgb(0, 17, 255);
+    outline: 5px solid rgb(255, 0, 0);
     outline-offset: 5px;
 }
 
-/* Impressum */
 
 .impressum {
     padding: 6rem 0;
