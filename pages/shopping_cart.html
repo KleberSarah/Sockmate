@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="de">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Warenkorb – Sockmate</title>
+
+        <!-- Nur noch eine CSS-Datei: Hannahs Teil steht jetzt in styles.css -->
+        <link rel="stylesheet" href="../css/styles.css">
+    </head>
+
+    <body>
+
+        <header>
+
+            <div class="container">
+
+                <a class="logo" href="index.html">
+                    SockMate
+                </a>
+
+                <nav aria-label="Hauptnavigation">
+                    <ul>
+                        <li><a href="products.html">Produkte</a></li>
+                        <li><a href="donation.html">Spenden</a></li>
+                        <li><a href="newsletter.html">Newsletter</a></li>
+                        <li><a href="about.html">Über uns</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+                    <a href="shopping_cart.html">Warenkorb</a>
+                    <a href="login.html">Anmelden</a>
+                </div>
+            </div>
+
+        </header>
+
+        <main>
+
+            <section class="cart">
+                <div class="container">
+
+                    <h1>Dein Warenkorb</h1>
+                    <p class="cart-subtitle">Hier siehst du alle Sockenclips, die du ausgewählt hast.</p>
+
+                    <div class="cart-layout">
+
+                        <div class="cart-items">
+
+                            <article class="cart-item">
+                                <img src="../materials/Einzel-Set%20weiss.png" alt="Weißer Sockenclip">
+                                <div class="cart-item-info">
+                                    <h2>Weißer Sockenclip</h2>
+                                    <p class="cart-item-description">
+                                        Einzelclip in Weiß, passend zu jeder Socke ...</p>
+                                    <p class="cart-item-price">2,99 €</p>
+                                </div>
+                                <div class="cart-item-quantity">
+                                    <label for="menge-1">Menge</label>
+                                    <input type="number" id="menge-1" value="1" min="1" max="10" step="1">
+                                </div>
+                                <p class="cart-item-total">2,99 €</p>
+                                <a class="cart-item-remove" href="shopping_cart.html">Entfernen</a>
+                            </article>
+
+                            <article class="cart-item">
+                                <img src="../materials/Familien-Set%20schwarz.png" alt="Familien-Set schwarz">
+                                <div class="cart-item-info">
+                                    <h2>Familien-Set schwarz</h2>
+                                    <p class="cart-item-description">
+                                        6er-Set in Schwarz für die ganze Familie ...</p>
+                                    <p class="cart-item-price">12,99 €</p>
+                                </div>
+                                <div class="cart-item-quantity">
+                                    <label for="menge-2">Menge</label>
+                                    <input type="number" id="menge-2" value="1" min="1" max="10" step="1">
+                                </div>
+                                <p class="cart-item-total">12,99 €</p>
+                                <a class="cart-item-remove" href="shopping_cart.html">Entfernen</a>
+                            </article>
+
+                            <article class="cart-item">
+                                <img src="../materials/4er-Set%20bunt.png" alt="Bunte Sockenclips">
+                                <div class="cart-item-info">
+                                    <h2>Bunte Sockenclips</h2>
+                                    <p class="cart-item-description">
+                                        4er-Set in vier Farben, eine pro Person ...</p>
+                                    <p class="cart-item-price">9,99 €</p>
+                                </div>
+                                <div class="cart-item-quantity">
+                                    <label for="menge-3">Menge</label>
+                                    <input type="number" id="menge-3" value="2" min="1" max="10" step="1">
+                                </div>
+                                <p class="cart-item-total">19,98 €</p>
+                                <a class="cart-item-remove" href="shopping_cart.html">Entfernen</a>
+                            </article>
+
+                        </div>
+
+                        <aside class="cart-summary">
+
+                            <h2>Zusammenfassung</h2>
+
+                            <div class="summary-row">
+                                <span>Zwischensumme</span>
+                                <span>35,96 €</span>
+                            </div>
+
+                            <div class="summary-row">
+                                <span>Versand</span>
+                                <span>Kostenlos</span>
+                            </div>
+
+                            <div class="summary-row summary-total">
+                                <span>Gesamt</span>
+                                <span>35,96 €</span>
+                            </div>
+
+                            <a href="checkout.html" class="cart-checkout-button">Zur Kasse</a>
+                            <a href="products.html" class="cart-continue-link">Weiter einkaufen</a>
+                        </aside>
+
+                    </div>
+
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <div class="container">
+                <div class="footer-grid">
+                    <section class="footer-brand">
+                        <h2>SockMate</h2>
+                        <p>Wir bringen Freude und Wärme in Ihr Leben mit unseren einzigartigen Socken.</p>
+                    </section>
+                    <section class="footer-links">
+                        <h3>Shop</h3>
+                        <ul>
+                            <li><a href="products.html">Produkte</a></li>
+                            <li><a href="donation.html">Spenden</a></li>
+                        </ul>
+                    </section>
+                    <section class="footer-links">
+                        <h3>Hilfe</h3>
+                        <ul>
+                            <li><a href="contact.html">Kontakt</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                        </ul>
+                    </section>
+                    <section class="footer-links">
+                        <h3>Rechtliches</h3>
+                        <ul>
+                            <li><a href="privacy.html">Datenschutz</a></li>
+                            <li><a href="terms.html">AGB</a></li>
+                            <li><a href="imprint.html">Impressum</a></li>
+                        </ul>
+                    </section>
+                </div>
+
+                <p class="footer-bottom">
+                    &copy; 2024 Sockmate. Alle Rechte vorbehalten.</p>
+
+            </div>
+
+        </footer>
+
+    </body>
+
+</html>
