@@ -460,9 +460,17 @@ body:has(.product-layout) .hero {
 .product-layout:has(#filter-colorful:checked):has(#filter-family-set:checked) .variant-colorful.variant-family,
 .product-layout:has(#filter-colorful:checked):has(#filter-fourer-set:checked) .variant-colorful.variant-fourer,
 .product-layout:has(#filter-yellow:checked):has(#filter-single-set:checked) .variant-yellow.variant-single,
+.product-layout:has(#filter-yellow:checked):has(#filter-family-set:checked) .variant-yellow.variant-family,
+.product-layout:has(#filter-yellow:checked):has(#filter-fourer-set:checked) .variant-yellow.variant-fourer,
 .product-layout:has(#filter-pink:checked):has(#filter-single-set:checked) .variant-pink.variant-single,
+.product-layout:has(#filter-pink:checked):has(#filter-family-set:checked) .variant-pink.variant-family,
+.product-layout:has(#filter-pink:checked):has(#filter-fourer-set:checked) .variant-pink.variant-fourer,
 .product-layout:has(#filter-green:checked):has(#filter-single-set:checked) .variant-green.variant-single,
-.product-layout:has(#filter-blue:checked):has(#filter-single-set:checked) .variant-blue.variant-single {
+.product-layout:has(#filter-green:checked):has(#filter-family-set:checked) .variant-green.variant-family,
+.product-layout:has(#filter-green:checked):has(#filter-fourer-set:checked) .variant-green.variant-fourer,
+.product-layout:has(#filter-blue:checked):has(#filter-single-set:checked) .variant-blue.variant-single,
+.product-layout:has(#filter-blue:checked):has(#filter-family-set:checked) .variant-blue.variant-family,
+.product-layout:has(#filter-blue:checked):has(#filter-fourer-set:checked) .variant-blue.variant-fourer {
     display: flex;
 }
 
@@ -482,7 +490,7 @@ body:has(.product-layout) .hero {
     left: 0.85rem;
     z-index: 1;
     display: flex;
-    max-width: 110px;
+    max-width: 130px;
     flex-wrap: nowrap;
     gap: 0.25rem;
 }
@@ -718,9 +726,17 @@ body:has(.product-layout) .hero {
 #family-detail-black:checked ~ .detail-image-stage .family-detail-img-black,
 #family-detail-white:checked ~ .detail-image-stage .family-detail-img-white,
 #family-detail-colorful:checked ~ .detail-image-stage .family-detail-img-colorful,
+#family-detail-blue:checked ~ .detail-image-stage .family-detail-img-blue,
+#family-detail-yellow:checked ~ .detail-image-stage .family-detail-img-yellow,
+#family-detail-green:checked ~ .detail-image-stage .family-detail-img-green,
+#family-detail-pink:checked ~ .detail-image-stage .family-detail-img-pink,
 #fourer-detail-black:checked ~ .detail-image-stage .fourer-detail-img-black,
 #fourer-detail-white:checked ~ .detail-image-stage .fourer-detail-img-white,
-#fourer-detail-colorful:checked ~ .detail-image-stage .fourer-detail-img-colorful {
+#fourer-detail-colorful:checked ~ .detail-image-stage .fourer-detail-img-colorful,
+#fourer-detail-blue:checked ~ .detail-image-stage .fourer-detail-img-blue,
+#fourer-detail-yellow:checked ~ .detail-image-stage .fourer-detail-img-yellow,
+#fourer-detail-green:checked ~ .detail-image-stage .fourer-detail-img-green,
+#fourer-detail-pink:checked ~ .detail-image-stage .fourer-detail-img-pink {
     display: block;
 }
 
