@@ -50,6 +50,14 @@ header .container {
     display: block;
 }
 
+.menu-toggle{
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
 nav a {
     text-decoration: none;
     color: var(--color-primary);
@@ -317,8 +325,21 @@ footer {
 @media (max-width:768px){
 
     header .container{
-        flex-direction: column;
-        gap: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu-toggle{
+        display: block;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .header-actions{
+        display: none;
     }
 
     nav ul {
