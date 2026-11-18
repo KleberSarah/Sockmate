@@ -8,16 +8,24 @@
 
         <link rel="stylesheet" href="../css/styles.css">
     </head>
-    
-     <body>
+
+    <body>
 
         <header>
 
             <div class="container">
 
                 <a class="logo" href="index.html">
-                    SockMate
+
+                    <img
+                        src="..\materials\Logo_lang.png"
+                        alt="SockMate Logo">
+
                 </a>
+
+                <button class="menu-toggle" aria-label="Menü öffnen">
+                    ☰
+                </button>
 
                 <nav aria-label="Hauptnavigation">
                     <ul>
@@ -30,7 +38,7 @@
                 </nav>
 
                 <div class="header-actions">
-                    <a href="cart.html">Warenkorb</a>
+                    <a href="cart.html" class="cart-btn">Warenkorb</a>
                     <a href="login.html">Anmelden</a>
                 </div>
             </div>
@@ -44,29 +52,29 @@
 
                     <h2>Über uns</h2>
 
-                    <div class="about-content">
-                        <div class="about-text">
-                            <p>
-                                SockMate wurde von Sarah Kleber, Hannah Eberl, Jolina Quis, Timea Libotean und Yvonne Liebl im Rahmen eines Projektes des Studiengangs Wirtschaftsinformatik an der DHBW Heidenheim entwickelt.<br>
-                                Die Marke und die dazugeöhrige Website sind <strong>fiktiv</strong> und wurden zu Lernzwecken erstellt. 
-                            </p>
-                            
-                            <p>
-                                <strong>Über Sockmate:</strong><br>
-                                SockMate bietet eine einfache Lösung für ein alltägliches Problem: das Verlieren oder Vertauschen von Socken während des Waschens. Mit Hilfe spezieller Sockenklammern bleiben zusammengehörige Socken während des gesamten Wasch- und Trockenvorgangs miteinander verbunden. Dadurch wird Zeit beim Sortieren gespart und das Risiko einzelner verlorener Socken reduziert.
-                            </p>
-
-                            <p>
-                                <strong>Unsere Vision:</strong><br>
-                                Unsere Vision ist es, den Alltag von Menschen durch einfache und innovative Lösungen zu erleichtern. Gleichzeitig möchten wir zeigen, dass wirtschaftlicher Erfolg und gesellschaftliches Engagement miteinander vereinbar sind. Deshalb verbindet SockMate ein praktisches Produkt mit der Unterstützung gemeinnütziger Organisationen und schafft so einen nachhaltigen Mehrwert für Kundinnen und Kunden sowie für die Gesellschaft.
-                            </p>
-                            
-                        </div>
+                        <p>
+                            SockMate wurde von Sarah Kleber, Hannah Eberl, Jolina Quis, Timea Libotean und Yvonne Liebl im Rahmen eines Projektes des Studiengangs Wirtschaftsinformatik an der DHBW Heidenheim entwickelt.
+                        </p>
+                        <p>
+                            Die Marke und die dazugeöhrige Website sind <strong>fiktiv</strong> und wurden zu Lernzwecken erstellt. 
+                        </p>
 
                         <img
-                        src="../materials/gruppenfoto.jpg"
-                        alt="Gruppenfoto der Entwickler von SockMate"
-                        class="about-image">
+                            src="../materials/gruppenfoto.jpg"
+                            alt="Gruppenfoto der Entwickler von SockMate"
+                            class="about-image">
+
+                        <h3>Über Sockmate</h3>
+                        
+                        <p>
+                            SockMate bietet eine einfache Lösung für ein alltägliches Problem: das Verlieren oder Vertauschen von Socken während des Waschens. Mit Hilfe spezieller Sockenklammern bleiben zusammengehörige Socken während des gesamten Wasch- und Trockenvorgangs miteinander verbunden. Dadurch wird Zeit beim Sortieren gespart und das Risiko einzelner verlorener Socken reduziert.
+                        </p>
+
+                        <h3>Unsere Vision</h3>
+
+                        <p>
+                            Unsere Vision ist es, den Alltag von Menschen durch einfache und innovative Lösungen zu erleichtern. Gleichzeitig möchten wir zeigen, dass wirtschaftlicher Erfolg und gesellschaftliches Engagement miteinander vereinbar sind. Deshalb verbindet SockMate ein praktisches Produkt mit der Unterstützung gemeinnütziger Organisationen und schafft so einen nachhaltigen Mehrwert für Kundinnen und Kunden sowie für die Gesellschaft.
+                        </p>
 
                     </div>
 
@@ -77,12 +85,12 @@
         </main>
 
 
-        <footer>
+        <footer aria-label="Seitenfuß">
             <div class="container">
                 <div class="footer-grid">
                     <section class="footer-brand">
                         <h2>SockMate</h2>
-                        <p>Wir bringen Freude und Wärme in Ihr Leben mit unseren einzigartigen Socken.</p>
+                        <p>Nachhaltige Sockenclips mit sozialem Mehrwert. Mit jedem Kauf unterstützen Sie ausgewählte Spendenprojekte.</p>
                     </section>
                     <section class="footer-links">
                         <h3>Shop</h3>
@@ -92,7 +100,14 @@
                         </ul>
                     </section>
                     <section class="footer-links">
-                        <h3>Hilfe</h3>
+                        <h3>Unternehmen</h3>
+                        <ul>
+                            <li><a href="about.html">Über uns</a></li>
+                            <li><a href="mission.html">Unsere Mission</a></li>
+                        </ul>
+                    </section>
+                    <section class="footer-links">
+                        <h3>Service</h3>
                         <ul>
                             <li><a href="contact.html">Kontakt</a></li>
                             <li><a href="faq.html">FAQ</a></li>
@@ -109,10 +124,13 @@
                 </div>
                     
                 <p class="footer-bottom">
-                    &copy; 2024 Sockmate. Alle Rechte vorbehalten.</p>
+                    &copy; 2026 Sockmate. <br>Clips für den guten Zweck.</p>
 
             </div>
 
-
         </footer>
+
+    </body>
+
+
 </html>

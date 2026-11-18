@@ -339,6 +339,10 @@ footer {
     line-height: 1.6;
 }
 
+form h3 {
+    margin-bottom: 1.5rem;
+}
+
 .contact-section input[type=text],
 .contact-section select,
 .contact-section textarea {
@@ -402,35 +406,38 @@ footer {
     line-height: 1.6;
 
 }
-
-.about-content {
-    display: flex;
-    gap: 2rem;
-    align-items: flex-start;
-}
-
-.about-content h2 {
-    margin-bottom: 0.5rem;
+.about-section h2 {
+    margin-bottom: 2rem;
     margin-top: 2rem;
     font-size: 2rem;
     text-align: left;
 }
 
-.about-text {
-    flex: 2;
+.about-section h3 {
+    margin-bottom: 0.5rem;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    text-align: left;
 }
-
-.about-text p {
+.about-section p {
     margin-bottom: 1rem;
     line-height: 1.6;
 
 }
 
+.about-section {
+    margin-bottom: 3rem;
+    line-height: 1.6;
+
+}
+
 .about-image {
-    width: 300px;
+    width: 500px;
+    max-width: 100%;
     height: auto;
+    display: block;
+    margin-left: 0rem;
     border-radius: 10px;
-    flex-shrink: 0;
 }
 
 
