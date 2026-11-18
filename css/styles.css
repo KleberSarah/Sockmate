@@ -395,6 +395,36 @@ footer {
 
 }
 
+.about-content {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.about-content h2 {
+    margin-bottom: 0.5rem;
+    margin-top: 2rem;
+    font-size: 2rem;
+    text-align: left;
+}
+
+.about-text {
+    flex: 2;
+}
+
+.about-text p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+
+}
+
+.about-image {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
 
 @media (max-width:768px){
 
