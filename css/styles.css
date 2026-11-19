@@ -622,6 +622,30 @@ body:has(.product-layout) .hero {
     padding: 2rem 0 5rem;
 }
 
+.product-detail-page .family-detail-breadcrumb,
+.product-detail-page .family-detail,
+.product-detail-page .fourer-detail-breadcrumb,
+.product-detail-page .fourer-detail {
+    display: none;
+}
+
+.product-detail-page:has(.family-detail input:target) .product-detail-breadcrumb:not(.family-detail-breadcrumb),
+.product-detail-page:has(.family-detail input:target) .product-detail-grid:not(.family-detail),
+.product-detail-page:has(.fourer-detail input:target) .product-detail-breadcrumb:not(.fourer-detail-breadcrumb),
+.product-detail-page:has(.fourer-detail input:target) .product-detail-grid:not(.fourer-detail) {
+    display: none;
+}
+
+.product-detail-page:has(.family-detail input:target) .family-detail-breadcrumb,
+.product-detail-page:has(.fourer-detail input:target) .fourer-detail-breadcrumb {
+    display: block;
+}
+
+.product-detail-page:has(.family-detail input:target) .family-detail,
+.product-detail-page:has(.fourer-detail input:target) .fourer-detail {
+    display: grid;
+}
+
 .product-detail-breadcrumb {
     margin-bottom: 1.5rem;
     color: var(--color-secondary);
