@@ -359,6 +359,11 @@ form h3 {
     font-family: inherit;
 }
 
+form input:focus-visible,
+form textarea:focus-visible {
+     outline: 3px solid #ff6b35;
+    outline-offset: 3px;
+}
 
 .contact-section button {
     background-color: var(--color-accent);
