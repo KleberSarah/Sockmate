@@ -407,6 +407,13 @@ form h3 {
     line-height: 1.6;
 
 }
+
+.impressum address {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+
+}
+
 .about-section h2 {
     margin-bottom: 2rem;
     margin-top: 2rem;
