@@ -53,14 +53,17 @@
                     <div class="contact-info">
                       <h2>Kontakt</h2>
                       <p>
-                            Hast du Fragen zu SockMate oder zu unseren
-                            Spendenaktionen? Dann kontaktiere uns gerne.
+                            Hast du Fragen zu SockMate oder zu unseren Spendenaktionen? <br>
+                            Dann kontaktiere uns gerne über das nachfolgende Kontaktformular oder unsere E-Mail: 
+                        <a href="mailto:info@sockmate.de">
+                            info@sockmate.de
+                        </a>
                      </p>
                      </div>
 
-                    <form>
+                    <form aria-labelledby="contact-form">
 
-                        <h3>Schreib uns eine Nachricht</h3>
+                        <h3 id="contact-form"> Schreib uns eine Nachricht</h3>
 
                         <label for="salutation">Anrede</label>
                         <select id="salutation" name="salutation">
@@ -77,17 +80,22 @@
                         <input type="text" id="lname" name="lastname">
 
                         <label for="email">E-Mail</label>
-                        <input type="text" id="mail" name="email">
+                        <input type="email" id="email" name="email">
 
                         <label for="subject">Nachricht</label>
                         <textarea id="subject" name="subject"></textarea>
 
-                        <input type="submit" value="Absenden">
+                        <button type="submit">
+                            Absenden
+                        </button>
 
                     </form>
 
                 </div>
+                
             </section>
+
+        </main>
 
         <footer aria-label="Seitenfuß">
             <div class="container">

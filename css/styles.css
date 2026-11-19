@@ -326,6 +326,7 @@ footer {
     text-align: left;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    width: 80%;
 }
 
 .contact-info h2 {
@@ -335,7 +336,6 @@ footer {
 }
 
 .contact-info p {
-    max-width: 500px;
     line-height: 1.6;
 }
 
@@ -344,6 +344,7 @@ form h3 {
 }
 
 .contact-section input[type=text],
+.contact-section input[type=email],
 .contact-section select,
 .contact-section textarea {
     width: 80%;
@@ -359,7 +360,7 @@ form h3 {
 }
 
 
-.contact-section input[type=submit] {
+.contact-section button {
     background-color: var(--color-accent);
     color: #ffffff;
     padding: 0.9rem 1.5rem;
@@ -371,13 +372,13 @@ form h3 {
 }
 
 
-.contact-section input[type=submit]:hover {
+.contact-section button:hover {
     opacity: 0.75;
 }
 
-.contact-section input[type=submit]:focus-visible {
-    outline: 5px solid rgb(255, 0, 0);
-    outline-offset: 5px;
+.contact-section button:focus-visible {
+    outline: 3px solid #ff6b35;
+    outline-offset: 3px;
 }
 
 
