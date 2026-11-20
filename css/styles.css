@@ -495,81 +495,170 @@ form textarea:focus-visible {
     }
 
 }/* Spendenprojekte Seite Layout */
-.page-header {
+/* Einführungsbereich mit Überschrift und Text */
+.spendenprojekte {
+    padding: 4rem 0;
     text-align: center;
-    padding: 40px 0 20px;
+    background-color: var(--color-surface);
 }
 
+/* Hauptüberschrift der Spendenprojekt-Seite */
+.spendenprojekte h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Einleitungstext unter der Überschrift */
+.spendenprojekte p {
+    max-width: 700px;
+    margin: 0 auto;
+    color: var(--color-secondary);
+    font-size: 1.1rem;
+}
+
+/* Bereich mit allen Spendenprojekten */
+.donation-projects {
+    padding: 4rem 0;
+}
+
+/* Liste bzw. Stapel der einzelnen Spendenprojekte */
 .donation-list {
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    margin-bottom: 50px;
+    gap: 2rem;
 }
 
+/* Eine einzelne Spendenprojekt-Karte */
 .donation-card {
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 24px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.donation-card h2 {
-    margin-bottom: 20px;
+/* Leichter Effekt, wenn man mit der Maus über eine Karte fährt */
+.donation-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
+/* Überschrift eines einzelnen Projekts */
+.donation-card h3 {
+    margin-bottom: 1.5rem;
+}
+
+/* Bereich mit dem Bild eines Projekts */
 .donation-content {
-    display: flex;
-    gap: 24px;
-    align-items: flex-start;
+    margin-bottom: 1.5rem;
 }
 
+/* Das Bild innerhalb einer Spendenkarte */
 .donation-image {
-    flex: 0 0 300px; /* Breite des Bild-Bereichs */
-}
-
-.donation-image img {
     width: 100%;
+    max-width: 320px;
     height: auto;
-    border-radius: 6px;
+    display: block;
+    border-radius: 12px;
     object-fit: cover;
 }
 
+/* Text- und Linkbereich eines Projekts */
 .donation-info {
-    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 16px;
+    gap: 1rem;
 }
 
+/* Text innerhalb des Informationsbereichs */
+.donation-info p {
+    line-height: 1.6;
+}
+
+/* Button-ähnlicher Link für "Mehr lesen" */
 .read-more-btn {
     display: inline-block;
-    padding: 8px 16px;
-    background-color: #333;
-    color: #fff;
+    padding: 0.75rem 1.25rem;
+    background-color: var(--color-accent);
+    color: #ffffff;
     text-decoration: none;
-    border-radius: 4px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: opacity 0.3s ease;
 }
 
+/* Effekt beim Überfahren des Links */
 .read-more-btn:hover {
-    background-color: #555;
+    opacity: 0.75;
 }
 
-/* Responsive Ansicht für kleine Bildschirme */
-@media (max-width: 768px) {
-    .donation-content {
-        flex-direction: column;
-    }
-    
-    .donation-image {
-        flex: 1 1 100%;
-        width: 100%;
-    }
-    
-.product-button:focus-visible {
+/* Tastaturfokus für den Link, wichtig für Barrierefreiheit */
+.read-more-btn:focus-visible {
     outline: 3px solid var(--color-accent);
     outline-offset: 3px;
 }
 
+/* Bereich zum Vorschlagen eines neuen Projekts */
+.project-suggestion {
+    background-color: var(--color-surface);
+    padding: 3rem;
+    border-radius: 16px;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+/* Überschrift im Vorschlagsbereich */
+.project-suggestion h3 {
+    margin-bottom: 1rem;
+}
+
+/* Textabsätze im Vorschlagsbereich */
+.project-suggestion p {
+    max-width: 700px;
+    margin: 0 auto 1rem;
+    color: var(--color-secondary);
+}
+
+/* Button zum Öffnen der Kontaktseite */
+.project-suggestion-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.9rem 1.5rem;
+    background-color: var(--color-accent);
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 999px;
+    font-weight: bold;
+    transition: opacity 0.3s ease;
+}
+
+/* Effekt beim Überfahren des Buttons */
+.project-suggestion-button:hover {
+    opacity: 0.75;
+}
+
+/* Tastaturfokus für den Button */
+.project-suggestion-button:focus-visible {
+    outline: 3px solid var(--color-accent);
+    outline-offset: 3px;
+}
+
+/* Responsive Anpassung für kleine Bildschirme */
+@media (max-width: 768px) {
+
+    /* Bilder werden auf Handys kleiner dargestellt */
+    .donation-image {
+        max-width: 100%;
+    }
+
+    /* Karten erhalten weniger Innenabstand */
+    .donation-card {
+        padding: 1.5rem;
+    }
+
+    /* Der Vorschlagsbereich wird kompakter */
+    .project-suggestion {
+        padding: 2rem;
+    }
 }
