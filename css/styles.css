@@ -96,7 +96,7 @@ nav ul {
     padding: 2rem;
 }
 
-.hero h1 {
+.hero h2 {
     font-size: 4rem;
     margin-bottom: 1rem;
 }
@@ -337,7 +337,7 @@ body:has(.product-layout) .hero {
     letter-spacing: 1px;
 }
 
-.hero-text h1 {
+.hero-text h2 {
     margin: 1rem 0;
     font-size: clamp(2.8rem, 5vw, 4.5rem);
     line-height: 1.05;
@@ -399,20 +399,10 @@ body:has(.product-layout) .hero {
     cursor: pointer;
 }
 
-.filter-search-button {
-    display: block;
+.filter-help {
     margin-top: 0.25rem;
-    padding: 0.8rem 1rem;
-    border-radius: 50px;
-    background: var(--color-primary);
-    color: white;
-    font-weight: bold;
-    text-align: center;
-    transition: background 0.3s;
-}
-
-.filter-search-button:hover {
-    background: var(--color-accent);
+    color: var(--color-secondary);
+    font-size: 0.85rem;
 }
 
 .product-list {
@@ -770,12 +760,6 @@ body:has(.product-layout) .hero {
 
 .family-detail-breadcrumb {
     margin-top: 4rem;
-}
-
-.product-detail-info h1 {
-    margin-bottom: 1rem;
-    font-size: clamp(2rem, 4vw, 2.8rem);
-    line-height: 1.15;
 }
 
 .product-detail-info h2 {

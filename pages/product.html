@@ -4,12 +4,14 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="SockMate hält Socken beim Waschen und Trocknen zusammen. Entdecke Einzel-Sets, Family-Sets und 4er-Sets.">
     <title>SockMate – Nie wieder getrennte Socken</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
+    <a class="skip-link" href="#main-content">Zum Hauptinhalt springen</a>
 
     <!-- HEADER -->
     <header>
@@ -19,7 +21,7 @@
 
             <nav aria-label="Hauptnavigation">
                 <ul>
-                    <li><a href="products.html">Produkte</a></li>
+                    <li><a href="product.html" aria-current="page">Produkte</a></li>
                     <li><a href="donation.html">Spenden</a></li>
                     <li><a href="newsletter.html">Newsletter</a></li>
                     <li><a href="about.html">Über uns</a></li>
@@ -35,7 +37,7 @@
     </header>
 
 
-    <main>
+    <main id="main-content">
 
         <!-- HERO -->
         <section class="hero">
@@ -47,17 +49,15 @@
                         ORDNUNG. EINFACH. CLEVER.
                     </span>
 
-                    <h1>
+                    <h2>
                         Nie wieder<br>getrennte Socken!
-                    </h1>
+                    </h2>
 
                     <p>
                         Unsere Sockenklemmen halten deine Socken
                         zuverlässig zusammen – für Waschmaschine,
                         Wäschetrockner und Alltag.
                     </p>
-
-                </div>
 
                 </div>
 
@@ -71,14 +71,14 @@
             <div class="container product-layout">
 
                 <!-- FILTER -->
-                <aside class="product-filter">
+                <aside class="product-filter" aria-label="Produktfilter">
 
                     <h2>Filter</h2>
 
                     <!-- FARBEN -->
-                    <div class="filter-option">
+                    <div class="filter-option" role="group" aria-labelledby="filter-colors-heading">
 
-                        <h3>Farben</h3>
+                        <h3 id="filter-colors-heading">Farben</h3>
 
                         <label>
                             <input class="filter-color" type="checkbox" id="filter-black">
@@ -119,9 +119,9 @@
 
 
                     <!-- SETS -->
-                    <div class="filter-option">
+                    <div class="filter-option" role="group" aria-labelledby="filter-sets-heading">
 
-                        <h3>Sets</h3>
+                        <h3 id="filter-sets-heading">Sets</h3>
 
                         <label>
                             <input class="filter-set" type="checkbox" id="filter-single-set">
@@ -140,15 +140,13 @@
 
                     </div>
 
-                    <a class="filter-search-button" href="#product-results">
-                        Auswahl suchen
-                    </a>
+                    <p class="filter-help">Die Auswahl wird direkt angewendet.</p>
 
                 </aside>
 
 
                 <!-- PRODUKTLISTE -->
-                <div class="product-list" id="product-results">
+                <div class="product-list" id="product-results" aria-label="Produkte">
 
 
                     <article class="product-item product-variant variant-blue variant-single" id="single-set">
@@ -160,7 +158,7 @@
                                 <a href="product-details.html#detail-yellow" aria-label="Gelb auswählen"><span class="color-swatch yellow" aria-hidden="true"></span></a>
                                 <a href="product-details.html#detail-pink" aria-label="Rosa auswählen"><span class="color-swatch pink" aria-hidden="true"></span></a>
                             </div>
-                            <img src="materials/Einzel-Set blau.png"
+                            <img loading="lazy" decoding="async" src="materials/Einzel-Set blau.png"
                                  alt="SockMate Einzel-Set in Blau">
                         </div>
                         <div class="product-info">
@@ -183,7 +181,7 @@
                                 <a href="product-details.html#detail-yellow" aria-label="Gelb auswählen"><span class="color-swatch yellow" aria-hidden="true"></span></a>
                                 <a href="product-details.html#detail-pink" aria-label="Rosa auswählen"><span class="color-swatch pink" aria-hidden="true"></span></a>
                             </div>
-                            <img src="materials/Einzel-Set schwarz.png"
+                            <img loading="lazy" decoding="async" src="materials/Einzel-Set schwarz.png"
                                  alt="SockMate Einzel-Set in Schwarz">
                         </div>
                         <div class="product-info">
@@ -206,7 +204,7 @@
                                 <a href="product-details.html#detail-yellow" aria-label="Gelb auswählen"><span class="color-swatch yellow" aria-hidden="true"></span></a>
                                 <a href="product-details.html#detail-pink" aria-label="Rosa auswählen"><span class="color-swatch pink" aria-hidden="true"></span></a>
                             </div>
-                            <img src="materials/Einzel-Set weiss.png"
+                            <img loading="lazy" decoding="async" src="materials/Einzel-Set weiss.png"
                                  alt="SockMate Einzel-Set in Weiß">
                         </div>
                         <div class="product-info">
@@ -229,7 +227,7 @@
                                 <a href="product-details.html#detail-yellow" aria-label="Gelb auswählen"><span class="color-swatch yellow" aria-hidden="true"></span></a>
                                 <a href="product-details.html#detail-pink" aria-label="Rosa auswählen"><span class="color-swatch pink" aria-hidden="true"></span></a>
                             </div>
-                            <img src="materials/Einzel-Set gruen.png"
+                            <img loading="lazy" decoding="async" src="materials/Einzel-Set gruen.png"
                                  alt="SockMate Einzel-Set in Grün">
                         </div>
                         <div class="product-info">
@@ -252,7 +250,7 @@
                                 <a href="product-details.html#detail-green" aria-label="Grün auswählen"><span class="color-swatch green" aria-hidden="true"></span></a>
                                 <a href="product-details.html#detail-pink" aria-label="Rosa auswählen"><span class="color-swatch pink" aria-hidden="true"></span></a>
                             </div>
-                            <img src="materials/Einzel-Set gelb.png"
+                            <img loading="lazy" decoding="async" src="materials/Einzel-Set gelb.png"
                                  alt="SockMate Einzel-Set in Gelb">
                         </div>
                         <div class="product-info">
@@ -275,7 +273,7 @@
                                 <a href="product-details.html#detail-green" aria-label="Grün auswählen"><span class="color-swatch green" aria-hidden="true"></span></a>
                                 <a href="product-details.html#detail-yellow" aria-label="Gelb auswählen"><span class="color-swatch yellow" aria-hidden="true"></span></a>
                             </div>
-                            <img src="materials/Einzel-Set pink.png"
+                            <img loading="lazy" decoding="async" src="materials/Einzel-Set pink.png"
                                  alt="SockMate Einzel-Set in Pink">
                         </div>
                         <div class="product-info">
@@ -299,7 +297,7 @@
                                 <a href="product-details.html#family-detail-green" aria-label="Family-Set Grün auswählen"><span class="color-swatch green" aria-hidden="true"></span></a>
                                 <a href="product-details.html#family-detail-pink" aria-label="Family-Set Pink auswählen"><span class="color-swatch pink" aria-hidden="true"></span></a>
                             </div>
-                            <img src="materials/Familien-Set bunt.png"
+                            <img loading="lazy" decoding="async" src="materials/Familien-Set bunt.png"
                                  alt="SockMate Family-Set mit sechs bunten Clips">
                         </div>
                         <div class="product-info">
@@ -323,7 +321,7 @@
                                 <a href="product-details.html#family-detail-green" aria-label="Family-Set Grün auswählen"><span class="color-swatch green" aria-hidden="true"></span></a>
                                 <a href="product-details.html#family-detail-pink" aria-label="Family-Set Pink auswählen"><span class="color-swatch pink" aria-hidden="true"></span></a>
                             </div>
-                            <img src="materials/Familien-Set schwarz.png"
+                            <img loading="lazy" decoding="async" src="materials/Familien-Set schwarz.png"
                                  alt="SockMate Family-Set mit sechs schwarzen Clips">
                         </div>
                         <div class="product-info">
@@ -347,7 +345,7 @@
                                 <a href="product-details.html#family-detail-green" aria-label="Family-Set Grün auswählen"><span class="color-swatch green" aria-hidden="true"></span></a>
                                 <a href="product-details.html#family-detail-pink" aria-label="Family-Set Pink auswählen"><span class="color-swatch pink" aria-hidden="true"></span></a>
                             </div>
-                            <img src="materials/Familien-Set weiss.png"
+                            <img loading="lazy" decoding="async" src="materials/Familien-Set weiss.png"
                                  alt="SockMate Family-Set mit sechs weißen Clips">
                         </div>
                         <div class="product-info">
@@ -371,7 +369,7 @@
                                 <a href="product-details.html#family-detail-green" aria-label="Family-Set Grün auswählen"><span class="color-swatch green" aria-hidden="true"></span></a>
                                 <a href="product-details.html#family-detail-pink" aria-label="Family-Set Pink auswählen"><span class="color-swatch pink" aria-hidden="true"></span></a>
                             </div>
-                            <img src="materials/Familien-Set blau.png" alt="SockMate Family-Set mit sechs blauen Clips">
+                            <img loading="lazy" decoding="async" src="materials/Familien-Set blau.png" alt="SockMate Family-Set mit sechs blauen Clips">
                         </div>
                         <div class="product-info">
                             <span class="product-category">FÜR DIE GANZE FAMILIE</span>
@@ -392,7 +390,7 @@
                                 <a href="product-details.html#family-detail-green" aria-label="Family-Set Grün auswählen"><span class="color-swatch green" aria-hidden="true"></span></a>
                                 <a href="product-details.html#family-detail-pink" aria-label="Family-Set Pink auswählen"><span class="color-swatch pink" aria-hidden="true"></span></a>
                             </div>
-                            <img src="materials/Familien-Set gelb.png" alt="SockMate Family-Set mit sechs gelben Clips">
+                            <img loading="lazy" decoding="async" src="materials/Familien-Set gelb.png" alt="SockMate Family-Set mit sechs gelben Clips">
                         </div>
                         <div class="product-info">
                             <span class="product-category">FÜR DIE GANZE FAMILIE</span>
@@ -413,7 +411,7 @@
                                 <a href="product-details.html#family-detail-yellow" aria-label="Family-Set Gelb auswählen"><span class="color-swatch yellow" aria-hidden="true"></span></a>
                                 <a href="product-details.html#family-detail-pink" aria-label="Family-Set Pink auswählen"><span class="color-swatch pink" aria-hidden="true"></span></a>
                             </div>
-                            <img src="materials/Familien-Set gruen.png" alt="SockMate Family-Set mit sechs grünen Clips">
+                            <img loading="lazy" decoding="async" src="materials/Familien-Set gruen.png" alt="SockMate Family-Set mit sechs grünen Clips">
                         </div>
                         <div class="product-info">
                             <span class="product-category">FÜR DIE GANZE FAMILIE</span>
@@ -434,7 +432,7 @@
                                 <a href="product-details.html#family-detail-yellow" aria-label="Family-Set Gelb auswählen"><span class="color-swatch yellow" aria-hidden="true"></span></a>
                                 <a href="product-details.html#family-detail-green" aria-label="Family-Set Grün auswählen"><span class="color-swatch green" aria-hidden="true"></span></a>
                             </div>
-                            <img src="materials/Familien-Set pink.png" alt="SockMate Family-Set mit sechs pinken Clips">
+                            <img loading="lazy" decoding="async" src="materials/Familien-Set pink.png" alt="SockMate Family-Set mit sechs pinken Clips">
                         </div>
                         <div class="product-info">
                             <span class="product-category">FÜR DIE GANZE FAMILIE</span>
@@ -455,7 +453,7 @@
                                 <a href="product-details.html#fourer-detail-green" aria-label="4er-Set Grün auswählen"><span class="color-swatch green" aria-hidden="true"></span></a>
                                 <a href="product-details.html#fourer-detail-pink" aria-label="4er-Set Pink auswählen"><span class="color-swatch pink" aria-hidden="true"></span></a>
                             </div>
-                            <img src="materials/4er-Set schwarz.png"
+                            <img loading="lazy" decoding="async" src="materials/4er-Set schwarz.png"
                                  alt="SockMate schwarzes 4er-Set mit vier Sockenklemmen">
                         </div>
                         <div class="product-info">
@@ -479,7 +477,7 @@
                                 <a href="product-details.html#fourer-detail-green" aria-label="4er-Set Grün auswählen"><span class="color-swatch green" aria-hidden="true"></span></a>
                                 <a href="product-details.html#fourer-detail-pink" aria-label="4er-Set Pink auswählen"><span class="color-swatch pink" aria-hidden="true"></span></a>
                             </div>
-                            <img src="materials/4er-Set weiss.png"
+                            <img loading="lazy" decoding="async" src="materials/4er-Set weiss.png"
                                  alt="SockMate weißes 4er-Set mit vier Sockenklemmen">
                         </div>
                         <div class="product-info">
@@ -503,7 +501,7 @@
                                 <a href="product-details.html#fourer-detail-green" aria-label="4er-Set Grün auswählen"><span class="color-swatch green" aria-hidden="true"></span></a>
                                 <a href="product-details.html#fourer-detail-pink" aria-label="4er-Set Pink auswählen"><span class="color-swatch pink" aria-hidden="true"></span></a>
                             </div>
-                            <img src="materials/4er-Set bunt.png"
+                            <img loading="lazy" decoding="async" src="materials/4er-Set bunt.png"
                                  alt="SockMate buntes 4er-Set mit vier Sockenklemmen">
                         </div>
                         <div class="product-info">
@@ -527,7 +525,7 @@
                                 <a href="product-details.html#fourer-detail-green" aria-label="4er-Set Grün auswählen"><span class="color-swatch green" aria-hidden="true"></span></a>
                                 <a href="product-details.html#fourer-detail-pink" aria-label="4er-Set Pink auswählen"><span class="color-swatch pink" aria-hidden="true"></span></a>
                             </div>
-                            <img src="materials/4er-Set blau.png" alt="SockMate blaues 4er-Set mit vier Sockenklemmen">
+                            <img loading="lazy" decoding="async" src="materials/4er-Set blau.png" alt="SockMate blaues 4er-Set mit vier Sockenklemmen">
                         </div>
                         <div class="product-info">
                             <span class="product-category">4ER-SET</span>
@@ -548,7 +546,7 @@
                                 <a href="product-details.html#fourer-detail-green" aria-label="4er-Set Grün auswählen"><span class="color-swatch green" aria-hidden="true"></span></a>
                                 <a href="product-details.html#fourer-detail-pink" aria-label="4er-Set Pink auswählen"><span class="color-swatch pink" aria-hidden="true"></span></a>
                             </div>
-                            <img src="materials/4er-Set gelb.png" alt="SockMate gelbes 4er-Set mit vier Sockenklemmen">
+                            <img loading="lazy" decoding="async" src="materials/4er-Set gelb.png" alt="SockMate gelbes 4er-Set mit vier Sockenklemmen">
                         </div>
                         <div class="product-info">
                             <span class="product-category">4ER-SET</span>
@@ -569,7 +567,7 @@
                                 <a href="product-details.html#fourer-detail-yellow" aria-label="4er-Set Gelb auswählen"><span class="color-swatch yellow" aria-hidden="true"></span></a>
                                 <a href="product-details.html#fourer-detail-pink" aria-label="4er-Set Pink auswählen"><span class="color-swatch pink" aria-hidden="true"></span></a>
                             </div>
-                            <img src="materials/4er-Set gruen.png" alt="SockMate grünes 4er-Set mit vier Sockenklemmen">
+                            <img loading="lazy" decoding="async" src="materials/4er-Set gruen.png" alt="SockMate grünes 4er-Set mit vier Sockenklemmen">
                         </div>
                         <div class="product-info">
                             <span class="product-category">4ER-SET</span>
@@ -590,7 +588,7 @@
                                 <a href="product-details.html#fourer-detail-yellow" aria-label="4er-Set Gelb auswählen"><span class="color-swatch yellow" aria-hidden="true"></span></a>
                                 <a href="product-details.html#fourer-detail-green" aria-label="4er-Set Grün auswählen"><span class="color-swatch green" aria-hidden="true"></span></a>
                             </div>
-                            <img src="materials/4er-Set rosa.png" alt="SockMate pinkes 4er-Set mit vier Sockenklemmen">
+                            <img loading="lazy" decoding="async" src="materials/4er-Set rosa.png" alt="SockMate pinkes 4er-Set mit vier Sockenklemmen">
                         </div>
                         <div class="product-info">
                             <span class="product-category">4ER-SET</span>
@@ -713,7 +711,7 @@
 
                 <h3>Shop</h3>
 
-                <a href="products.html">Produkte</a>
+                <a href="product.html">Produkte</a>
                 <a href="donation.html">Spenden</a>
 
             </section>
