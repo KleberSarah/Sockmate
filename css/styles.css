@@ -322,6 +322,138 @@ footer {
 }
 
 
+.contact-info {
+    text-align: left;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 80%;
+}
+
+.contact-info h2 {
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    text-align: left;
+}
+
+.contact-info p {
+    line-height: 1.6;
+}
+
+form h3 {
+    margin-bottom: 1.5rem;
+}
+
+.contact-section input[type=text],
+.contact-section input[type=email],
+.contact-section select,
+.contact-section textarea {
+    width: 80%;
+    display: block;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family: inherit;
+}
+
+form input:focus-visible,
+form textarea:focus-visible {
+     outline: 3px solid #ff6b35;
+    outline-offset: 3px;
+}
+
+.contact-section button {
+    background-color: var(--color-accent);
+    color: #ffffff;
+    padding: 0.9rem 1.5rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+
+
+.contact-section button:hover {
+    opacity: 0.75;
+}
+
+.contact-section button:focus-visible {
+    outline: 3px solid #ff6b35;
+    outline-offset: 3px;
+}
+
+
+.impressum {
+    text-align: left;
+    margin-bottom: 2rem;
+    background-color:transparent;
+    color:#000000;
+    border: none;
+}
+
+.impressum h2 {
+    margin-bottom: 0.5rem;
+    margin-top: 2rem;
+    font-size: 2rem;
+    text-align: left;
+}
+
+.impressum h3 {
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.impressum p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+
+}
+
+.impressum address {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+
+}
+
+.about-section h2 {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    font-size: 2rem;
+    text-align: left;
+}
+
+.about-section h3 {
+    margin-bottom: 0.5rem;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    text-align: left;
+}
+.about-section p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+
+}
+
+.about-section {
+    margin-bottom: 3rem;
+    line-height: 1.6;
+
+}
+
+.about-image {
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: 0rem;
+    border-radius: 10px;
+}
+
+
 @media (max-width:768px){
 
     header .container{
