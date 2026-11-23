@@ -306,6 +306,7 @@ body:has(.product-layout) .hero {
     padding: 0;
     margin: -1px;
 }
+/* SockMate product detail page styles */ 
 
 .product-detail-page {
     padding: 2rem 0 5rem;
