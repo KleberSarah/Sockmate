@@ -5,6 +5,9 @@
 }
 
 :root {
+
+    color-scheme: light dark;
+
     --color-primary: #164E21;
     --color-secondary: #2C7A35;
     --color-background: #f2f2f2;
@@ -321,6 +324,22 @@ footer {
     outline-offset: 3px;
 }
 
+@media (prefers-color-scheme: dark){
+
+        :root{
+            --color-primary:#D8F1DC;
+            --color-background: #A7D8AE;
+            --color-surface:#0F1411; 
+            --color-secondary: #18211B;
+            --color-accent: #63C96A;
+            --color-border: #2A3A2D;
+        }
+
+        body{
+        background:red !important;
+        }
+}
+
 
 @media (max-width:768px){
 
@@ -361,5 +380,8 @@ footer {
 
         grid-template-columns: 1fr;
     }
+    
+
+    
 
 }
