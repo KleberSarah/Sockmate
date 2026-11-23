@@ -405,6 +405,20 @@ body:has(.product-layout) .hero {
     font-size: 0.85rem;
 }
 
+.filter-confirm-button {
+    align-self: flex-start;
+    margin-top: 0.75rem;
+    padding: 0.45rem 0.7rem;
+    border: 0;
+    border-radius: 10px;
+    background-color: var(--color-accent);
+    color: #ffffff;
+    font: inherit;
+    font-size: 0.85rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
 .product-list {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -714,6 +728,7 @@ body:has(.product-layout) .hero {
     min-height: 440px;
     align-items: center;
     justify-content: center;
+    align-self: flex-start;
     margin-top: 0.5rem;
     border-radius: 12px;
     background: #f1f2f7;
